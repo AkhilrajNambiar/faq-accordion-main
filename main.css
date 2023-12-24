@@ -68,3 +68,8 @@ img.toggle-icon {
 hr {
     border: 1px solid hsl(275, 100%, 97%);
 }
+@media screen and (max-width: 560px) {
+    body {
+        background-image: url(/assets/images/background-pattern-mobile.svg);
+    }
+}
