@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "workSans";
+    src: url("/assets/fonts/WorkSans-VariableFont_wght.ttf");
+}
+* {
+    font-family: "workSans";
+    margin: 0;
+    color: hsl(292, 42%, 14%);
+}
+body {
+    background-image: url(/assets/images/background-pattern-desktop.svg);
+}
+div.colored-card {
+    position: absolute;
+    background-color: hsl(275, 100%, 97%);
+    height: 70%;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+}
+div.main-card {
+    background-color: white;
+    position: absolute;
+    z-index: 3;
+    min-width: 300px;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 40px;
+    border-radius: 16px;
+}
+img.title-logo {
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+div.card-title {
+    display: inline;
+    font-size: 40px;
+    font-weight: 700;
+}
+ul.questions-list {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+div.question-and-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+p.question {
+    font-weight: 600;
+    margin-right: 20px;
+}
+p.answer {
+    display: none;
+    margin-bottom: 20px;
+    transition: 500ms;
+    color: hsl(292, 16%, 49%);
+}
+img.toggle-icon {
+    transition: 500ms;
+}
+hr {
+    border: 1px solid hsl(275, 100%, 97%);
+}
